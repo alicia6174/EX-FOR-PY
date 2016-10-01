@@ -8,7 +8,7 @@ def inputItem(i):
     return x*y
 
 def showPrice(a):
-    print("{0:s}: {1:.2f}").format(a[0], a[1])
+    print("{0:s}: ${1:.2f}").format(a[0], a[1])
 
 def selfCheck():
     Sub = reduce(operator.add, map(inputItem, range(1,4)))
