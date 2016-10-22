@@ -3,8 +3,10 @@
 f = open('data', 'r')
 Data = f.readlines()
 Data.sort()
-print "Total of %d names" % len(Data)
-print "-----------------"
+ret = "Total of %d names" % len(Data)
+print ret
+# print "-----------------"
+print "".join(['-']*(len(ret)+1))
 for i in range(0, 7):
     s = Data[i]
     print s[0:len(s)-1]
